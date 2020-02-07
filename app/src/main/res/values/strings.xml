@@ -15,4 +15,8 @@
     <string name="menu_send">Contact Us</string>
     <string name="menu_terms">Terms and Conditions</string>
     <string name="menu_logout">Log Out</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Continue</string>
+    <string name="dummy_content">RwandAir</string>
 </resources>
