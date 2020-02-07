@@ -29,11 +29,12 @@
         >
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/search_flights_card"
             android:layout_width="150dp"
             android:layout_height="200dp"
             android:gravity="center"
-            app:cardElevation="10dp"
             android:clickable="true"
+            android:focusable="true"
             android:layout_margin="10dp"
             >
 
@@ -62,10 +63,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/book_flight_card"
             android:layout_width="150dp"
             android:layout_height="200dp"
             android:gravity="center"
             android:clickable="true"
+            android:focusable="true"
             android:layout_margin="10dp"
             >
 
@@ -100,10 +103,12 @@
         android:gravity="center">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/flight_schedule_card"
             android:layout_width="150dp"
             android:layout_height="200dp"
             android:gravity="center"
             android:clickable="true"
+            android:focusable="true"
             android:layout_margin="10dp"
             >
 
@@ -131,11 +136,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/book_hotel_card"
             android:layout_width="150dp"
             android:layout_height="200dp"
             android:gravity="center"
             android:clickable="true"
-            android:elevation="16dp"
+            android:focusable="true"
             android:layout_margin="10dp"
             >
 
