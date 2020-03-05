@@ -60,42 +60,42 @@ public class HomeFragment extends Fragment {
 
 
         // assign card buttons
-        search_flight = root.findViewById(R.id.search_flights_card);
-        book_flight = root.findViewById(R.id.book_flight_card);
-        flight_schedule = root.findViewById(R.id.flight_schedule_card);
-        book_hotel = root.findViewById(R.id.book_hotel_card);
+//        search_flight = root.findViewById(R.id.search_flights_card);
+//        book_flight = root.findViewById(R.id.book_flight_card);
+//        flight_schedule = root.findViewById(R.id.flight_schedule_card);
+//        book_hotel = root.findViewById(R.id.book_hotel_card);
 
         // set snack bars for all the cards, "coming soon".
-        search_flight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
-        book_flight.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+//        search_flight.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+//
+//        book_flight.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+//                Intent bookflightpage = new Intent(getActivity(), bookflight.class);
+//                startActivity(bookflightpage);
+//            }
+//        });
+//
+//        flight_schedule.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
 //                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
-                Intent bookflightpage = new Intent(getActivity(), bookflight.class);
-                startActivity(bookflightpage);
-            }
-        });
-
-        flight_schedule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
-            }
-        });
-
-        book_hotel.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
-            }
-        });
+//            }
+//        });
+//
+//        book_hotel.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+//            }
+//        });
 
         Button fab = root.findViewById(R.id.yourtripbtn);
         fab.setOnClickListener(new View.OnClickListener() {
