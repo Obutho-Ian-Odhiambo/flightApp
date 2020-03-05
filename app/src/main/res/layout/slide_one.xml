@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="end"
+            android:text="Skip" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginLeft="27.5dp"
+        android:layout_marginRight="27.5dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="244.3dp"
+            android:layout_marginTop="30dp"
+            android:src="@mipmap/cherrywaiting" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:fontFamily="@font/poppins_extrabold"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="11sp"
+            android:textColor="#1e2432"
+            android:textSize="20sp"
+            android:text="NO more stress and anxiety when searching and booking flightd"
+            />
+
+        <Button
+            android:id="@+id/slideonebtn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Next" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

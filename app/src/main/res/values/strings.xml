@@ -2,7 +2,7 @@
     <string name="app_name">flightApp</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">UserName</string>
+    <string name="nav_header_title">FlightApp</string>
     <string name="nav_header_subtitle">your_email@flightapp.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
@@ -14,9 +14,12 @@
     <string name="menu_share">Share App</string>
     <string name="menu_send">Contact Us</string>
     <string name="menu_terms">Terms and Conditions</string>
-    <string name="menu_logout">Log Out</string>
+    <string name="menu_logout">Settings</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Continue</string>
-    <string name="dummy_content">RwandAir</string>
+    <string name="dummy_content">FlightApp</string>
+    <string name="title_activity_bookflight">bookflight</string>
+    <string name="tab_text_1">One Way</string>
+    <string name="tab_text_2">Round Trip</string>
 </resources>

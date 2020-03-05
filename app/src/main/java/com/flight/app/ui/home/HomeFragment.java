@@ -1,5 +1,6 @@
 package com.flight.app.ui.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.flight.app.R;
+import com.flight.app.bookflight;
 import com.google.android.material.snackbar.Snackbar;
 
 public class HomeFragment extends Fragment {
@@ -60,7 +62,9 @@ public class HomeFragment extends Fragment {
         book_flight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+//                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+                Intent bookflightpage = new Intent(getActivity(), bookflight.class);
+                startActivity(bookflightpage);
             }
         });
 

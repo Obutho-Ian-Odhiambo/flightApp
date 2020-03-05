@@ -82,7 +82,7 @@ public class FullscreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent startAppIntent = new Intent(FullscreenActivity.this, MainActivity.class);
+                Intent startAppIntent = new Intent(FullscreenActivity.this, slideone.class);
                 startActivity(startAppIntent);
                 finish();
             }
