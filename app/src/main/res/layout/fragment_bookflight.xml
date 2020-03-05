@@ -58,8 +58,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:src="@mipmap/plane"/>
 
                         <EditText
@@ -96,9 +96,9 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/plane"/>
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/icons8airplanelanding80"/>
 
                         <EditText
                             android:layout_width="match_parent"
@@ -133,9 +133,9 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@mipmap/plane"/>
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/icons8calendar128"/>
 
                         <EditText
                             android:layout_width="match_parent"
@@ -182,9 +182,9 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:src="@mipmap/plane"/>
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/icons8passenger80"/>
 
                                 <EditText
                                     android:layout_width="match_parent"
@@ -219,9 +219,9 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:src="@mipmap/plane"/>
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@mipmap/icons8flightseat80"/>
 
                                 <EditText
                                     android:layout_width="match_parent"
