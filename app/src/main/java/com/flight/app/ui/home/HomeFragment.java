@@ -17,19 +17,34 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.flight.app.DiscoverREPO;
+import com.flight.app.DiscoverRecyclerAdapter;
 import com.flight.app.R;
 import com.flight.app.bookflight;
 import com.google.android.material.snackbar.Snackbar;
+
+import java.util.ArrayList;
 
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
     private CardView search_flight, book_flight, flight_schedule, book_hotel;
 
+    Integer[] homeimage1 = {R.mipmap.imagetwo, R.mipmap.home_image};
+    ArrayList<DiscoverREPO> arrayList;
+    DiscoverRecyclerAdapter adapter;
+    private RecyclerView recyclerview;
+    private TextView search_layout;
 
+
+    @Nullable
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+                             @Nullable ViewGroup container,@Nullable Bundle savedInstanceState) {
 
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
@@ -91,5 +106,29 @@ public class HomeFragment extends Fragment {
         });
 
         return root;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);;
+
+        recyclerview = view.findViewById(R.id.recyclerview);
+        RecyclerView.LayoutManager layoutManager1 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerview.setLayoutManager(layoutManager1);
+        recyclerview.setItemAnimator(new DefaultItemAnimator());
+        recyclerview.setNestedScrollingEnabled(false);
+
+
+        arrayList = new ArrayList<>();
+
+
+        for (int i = 0; i < homeimage1.length; i++) {
+            DiscoverREPO discoverREPO = new DiscoverREPO(homeimage1[i]);
+            arrayList.add(discoverREPO);
+        }
+        adapter = new DiscoverRecyclerAdapter(getContext(), arrayList);
+        recyclerview.setAdapter(adapter);
+
+
     }
 }

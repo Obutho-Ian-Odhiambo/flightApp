@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background"
+    tools:context=".TourDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@mipmap/photos"
+                    android:scaleType="centerCrop"
+                    android:layout_height="298dp" />
+
+                <include layout="@layout/toolbar_two" />
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="18dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:tint="#bec2ce" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/poppins_bold"
+                    android:letterSpacing="0.01"
+                    android:lineSpacingExtra="7sp"
+                    android:text="Mont blanc"
+                    android:textColor="#bec2ce"
+                    android:textSize="24sp" />
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:src="@drawable/ic_bookmark_black_24dp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginRight="33dp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:lineSpacingExtra="10sp"
+                android:textColor="#1e2432"
+                android:textSize="24sp"
+                android:text="Climbing Mont Blanc in the Winter" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+
+                <RatingBar
+                    android:id="@+id/RatingBar_Id"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:progressTint="#f15421"
+                    android:rating="4" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8.4dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:letterSpacing="-0.01"
+                    android:lineSpacingExtra="4sp"
+                    android:text="4.0  |  45 reviews"
+                    android:textColor="#bec2ce"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="19.5dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_gravity="start"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Distance"
+                            android:textSize="15.7sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="2.5dp"
+                        android:fontFamily="@font/poppins_extrabold"
+                        android:gravity="start"
+                        android:text="32 KM"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22.3sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Elevation"
+                            android:textSize="15.7sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_extrabold"
+                        android:text="2371m"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22.3sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="16.3dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="center"
+                            android:text="Time    "
+                            android:textSize="15.7sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_gravity="start"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="@font/poppins_extrabold"
+                        android:text="24 h"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="22.3sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/poppins_light"
+               android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="8sp"
+                android:text="Mont Blanc, Italian Monte Bianco, mountain massif and highest peak (15,771 feet [4,807 metres]) in Europe. Located in the Alps, the massif lies along the French-Italian border and reaches into Switzerland. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets co"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="15dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#ffffff"
+                android:background="@drawable/ic_hotel_booking"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="2sp"
+                android:layout_marginBottom="65dp"
+                android:layout_marginRight="22dp"
+                android:layout_marginLeft="22dp"
+                android:text="BOOK FROM $845.00"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
