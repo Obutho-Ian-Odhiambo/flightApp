@@ -25,6 +25,9 @@ import com.flight.app.DiscoverREPO;
 import com.flight.app.DiscoverRecyclerAdapter;
 import com.flight.app.R;
 import com.flight.app.bookflight;
+import com.flight.app.placesproject.MapActivity;
+import com.flight.app.placesproject.PermissionsActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
@@ -32,7 +35,7 @@ import java.util.ArrayList;
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;
-    private CardView search_flight, book_flight, flight_schedule, book_hotel;
+    private FloatingActionButton checkin_flight, book_flight, flight_schedule, book_hotel;
 
     Integer[] homeimage1 = {R.mipmap.imagetwo, R.mipmap.home_image};
     ArrayList<DiscoverREPO> arrayList;
@@ -60,42 +63,44 @@ public class HomeFragment extends Fragment {
 
 
         // assign card buttons
-//        search_flight = root.findViewById(R.id.search_flights_card);
-//        book_flight = root.findViewById(R.id.book_flight_card);
-//        flight_schedule = root.findViewById(R.id.flight_schedule_card);
-//        book_hotel = root.findViewById(R.id.book_hotel_card);
+        checkin_flight = root.findViewById(R.id.checkfloatingActionButton2);
+        book_flight = root.findViewById(R.id.flightfloatingActionButton);
+        flight_schedule = root.findViewById(R.id.schedulesfloatingActionButton3);
+        book_hotel = root.findViewById(R.id.hotelfloatingActionButton4);
 
         // set snack bars for all the cards, "coming soon".
-//        search_flight.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
+        checkin_flight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 //                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-//            }
-//        });
-//
-//        book_flight.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-////                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
-//                Intent bookflightpage = new Intent(getActivity(), bookflight.class);
-//                startActivity(bookflightpage);
-//            }
-//        });
-//
-//        flight_schedule.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PermissionsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        book_flight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 //                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
-//            }
-//        });
-//
-//        book_hotel.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
-//            }
-//        });
+                Intent bookflightpage = new Intent(getActivity(), bookflight.class);
+                startActivity(bookflightpage);
+            }
+        });
+
+        flight_schedule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+            }
+        });
+
+        book_hotel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+            }
+        });
 
         Button fab = root.findViewById(R.id.yourtripbtn);
         fab.setOnClickListener(new View.OnClickListener() {

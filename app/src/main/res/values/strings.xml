@@ -6,6 +6,7 @@
     <string name="nav_header_subtitle">your_email@flightapp.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="api_key">AIzaSyDwF3u9j-0UT-BpYT91MkR96GkRTeu6Luc</string>
 
     <string name="menu_home">Dashboard</string>
     <string name="menu_gallery">Flight Status</string>
@@ -13,6 +14,8 @@
     <string name="menu_tools">Baggage Allowance</string>
     <string name="menu_share">Share App</string>
     <string name="menu_send">Contact Us</string>
+    <string name="explore_more"> <u>Explore More</u></string>
+    <string name="view_all"> <u>View All</u></string>
     <string name="menu_terms">Terms and Conditions</string>
     <string name="menu_logout">Settings</string>
 
@@ -22,4 +25,9 @@
     <string name="title_activity_bookflight">bookflight</string>
     <string name="tab_text_1">One Way</string>
     <string name="tab_text_2">Round Trip</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="google_maps_api">AIzaSyDiNRRiUxGVYk33T0VmheeVuNCjcOu9XOk</string>
+
+
 </resources>

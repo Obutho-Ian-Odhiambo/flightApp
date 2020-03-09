@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
     android:orientation="vertical">
 
     <LinearLayout
@@ -18,7 +20,7 @@
             android:layout_marginRight="20dp"
             android:fontFamily="@font/poppins_regular"
             android:gravity="end"
-            android:text="Skip" />
+            android:text="@string/skip" />
 
     </LinearLayout>
 
@@ -55,6 +57,7 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
             android:layout_marginTop="50dp"
             android:text="Next" />
 
@@ -62,4 +65,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>

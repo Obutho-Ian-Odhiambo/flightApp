@@ -58,8 +58,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
                             android:src="@mipmap/plane"/>
 
                         <EditText
@@ -96,8 +96,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@mipmap/icons8airplanelanding80"/>
 
                         <EditText
@@ -133,8 +133,8 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:src="@mipmap/icons8calendar128"/>
 
                         <EditText
@@ -182,8 +182,8 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
                                     android:src="@mipmap/icons8passenger80"/>
 
                                 <EditText
@@ -219,8 +219,8 @@
                                 android:orientation="horizontal">
 
                                 <ImageView
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
                                     android:src="@mipmap/icons8flightseat80"/>
 
                                 <EditText
@@ -245,7 +245,7 @@
                         android:text="Save Search"
                         android:id="@+id/eventButton"
                         android:layout_column="0"
-                        android:background="#016eff"
+                        android:background="@color/colorPrimary"
                         android:layout_marginRight="8dp"
                         android:textColor="#ffffff"
                         android:textStyle="normal"
