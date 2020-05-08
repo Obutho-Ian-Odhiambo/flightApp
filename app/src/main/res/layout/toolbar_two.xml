@@ -14,7 +14,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_left_black_48dp"
+        android:src="@drawable/ic_arrow_back_blue_24dp"
         android:tint="@android:color/black" />
 
     <TextView
