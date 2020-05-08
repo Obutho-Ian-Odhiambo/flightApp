@@ -72,10 +72,9 @@ public class HomeFragment extends Fragment {
         checkin_flight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-                Intent intent = new Intent(getActivity(), PermissionsActivity.class);
-                startActivity(intent);
+                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+
             }
         });
 
@@ -98,7 +97,8 @@ public class HomeFragment extends Fragment {
         book_hotel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Snackbar.make(v, "Coming Soon", Snackbar.LENGTH_LONG).show();
+                Intent intent = new Intent(getActivity(), PermissionsActivity.class);
+                startActivity(intent);
             }
         });
 
